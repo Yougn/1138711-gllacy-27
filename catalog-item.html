@@ -19,16 +19,26 @@
       </ul>
       <ul>
         <li>
-          <!-- Здесь будет кнопка поиска -->
-          <button type="button">Поиск</button>
+          <form action="#" method="post">
+            <label for="search" class="visually-hidden">Что ищем?</label>
+            <input type="search" name="search" id="search" placeholder="Что ищем?">
+          </form>
         </li>
         <li>
-          <!-- Здесь будет кнопка входа -->
-          <button type="button">Войти</button>
+          <form action="#" method="post">
+            <label for="email" class="visually-hidden">Электронная почта</label>
+            <input type="email" name="email" id="email" placeholder="Электронная почта">
+            <label for="password" class="visually-hidden">Пароль</label>
+            <input type="password" name="password" id="password" placeholder="Пароль">
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+            <button>Войти</button>
+          </form>
         </li>
         <li>
-          <!-- Здесь будет корзина -->
-          <button type="button"> 2 товара</button>
+          <div>
+            <a href="#">Оформить заказ</a>
+          </div>
         </li>
       </ul>
     </nav>

@@ -10,25 +10,44 @@
   <header>
     <nav>
       <a href="index.html">
-        <img src="img/logo.svg" width="80" height="30" alt=" Логотип Глейсишопа">
+        <img src="img/logo.svg" width="80" height="30" alt="Логотип Глейсишопа">
       </a>
       <ul>
-        <li><a href="catalog.html">Каталог</a></li>
+        <li>
+          <a href="#">Каталог</a>
+          <ul>
+            <li><a href="#">Новинки</a></li>
+            <li><a href="#">Сливочное</a></li>
+            <li><a href="#">Щербеты</a></li>
+            <li><a href="#">Фруктовый лед</a></li>
+            <li><a href="#">Мелорин</a></li>
+          </ul>
+        </li>
         <li><a href="delivery.html">Доставка и оплата</a></li>
         <li><a href="aboutus.html">О компании</a></li>
       </ul>
       <ul>
         <li>
-          <!-- Здесь будет кнопка поиска -->
-          <button type="button">Поиск</button>
+          <form action="#" method="post">
+            <label for="search" class="visually-hidden">Что ищем?</label>
+            <input type="search" name="search" id="search" placeholder="Что ищем?">
+          </form>
         </li>
         <li>
-          <!-- Здесь будет кнопка входа -->
-          <button type="button">Войти</button>
+          <form action="#" method="post">
+            <label for="email" class="visually-hidden">Электронная почта</label>
+            <input type="email" name="email" id="email" placeholder="Электронная почта">
+            <label for="password" class="visually-hidden">Пароль</label>
+            <input type="password" name="password" id="password" placeholder="Пароль">
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+            <button>Войти</button>
+          </form>
         </li>
         <li>
-          <!-- Здесь будет корзина -->
-          <button type="button"> 2 товара</button>
+          <div>
+            <a href="#">Оформить заказ</a>
+          </div>
         </li>
       </ul>
     </nav>
@@ -114,16 +133,20 @@
     </section>
     <article>
       <p>Новое в нашем блоге</p>
-      <h4><a href="https://tenways.com">10 способов сервировок фруктовых щербетов к столу<a>
+      <h4><a href="https://ten-ways.com">10 способов сервировок фруктовых щербетов к столу<a>
       </h4>
     </article>
     <section>
       <h4>Рассылка</h4>
-      <p>
-        Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
-        Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-      </p>
-      <!-- Здесь будет форма -->
+      <form>
+        <p>
+          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+          Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+        </p>
+        <label for="email" class="visually-hidden">Электронная почта</label>
+        <input type="email" name="email" id="email" placeholder="Электронная почта">
+        <button>Отправить</button>
+      </form>
     </section>
     <div>
       <img src="map.svg" width="400" height="200" alt="Карта">
@@ -138,6 +161,24 @@
         (с 10 до 20 ежедневно)
       </p>
       <a href="#">Форма обратной связи</a>
+      <form action="#" method="post">
+        <p><span>Мы обязательно вам ответим!</span></p>
+        <ul>
+          <li>
+            <label for="name" class="visually-hidden">Как вас зовут?</label>
+            <input type="text" name="name" id="name" placeholder="Как вас зовут?">
+          </li>
+          <li>
+            <label for="email" class="visually-hidden">Ваша почта для ответа?</label>
+            <input type="email" name="email" id="email" placeholder="Ваша почта для ответа?">
+          </li>
+          <li>
+            <label for="comment-field" class="visually-hidden">Напишите что-нибудь...</label>
+            <textarea name="comment" id="comment-field" rows="5">Напишите что-нибудь...</textarea>
+          </li>
+        </ul>
+        <button>Отправить</button>
+      </form>
     </div>
   </main>
   <footer>
