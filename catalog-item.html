@@ -19,26 +19,42 @@
       </ul>
       <ul>
         <li>
-          <form action="#" method="post">
-            <label for="search" class="visually-hidden">Что ищем?</label>
-            <input type="search" name="search" id="search" placeholder="Что ищем?">
+          <button>Поиск</button>
+          <form action="#" method="get">
+            <label for="search" class="visually-hidden">Крем-брюле</label>
+            <input type="search" name="search" id="search" placeholder="Крем-брюле">
           </form>
         </li>
         <li>
+          <button>Вход</button>
           <form action="#" method="post">
-            <label for="email" class="visually-hidden">Электронная почта</label>
-            <input type="email" name="email" id="email" placeholder="Электронная почта">
-            <label for="password" class="visually-hidden">Пароль</label>
-            <input type="password" name="password" id="password" placeholder="Пароль">
+            <label for="email" class="visually-hidden">email@example.com</label>
+            <input type="email" name="email" id="email" placeholder="email@example.com">
+            <label for="password" class="visually-hidden">••••••••</label>
+            <input type="password" name="password" id="password" placeholder="••••••••">
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
             <button>Войти</button>
           </form>
         </li>
         <li>
-          <div>
-            <a href="#">Оформить заказ</a>
-          </div>
+          <button>Корзина</button>
+          <ul>
+            <li>
+              <button type="button"><span class="visually-hidden">Удалить товар из корзины</span></button>
+              <img src="img/product-1.jpg" width="20" height="20"
+                alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              <p>Пломбир с апельсиновым джемом 1,5 кг х 200 руб.</span> 300 руб.</p>
+            </li>
+            <li>
+              <button type="button"><span class="visually-hidden">Удалить товар из корзины</span></button>
+              <img src="img/product-3.jpg" width="20" height="20"
+                alt="Сливочно-клубничное с  присыпкой из белого шоколада">
+              <p> Клубничный пломбир с присыпкой из белого шоколада 1,5 кг х<span> 200 руб.</span> 450 руб.</p>
+            </li>
+          </ul>
+          <p>Итого:750 руб.</p>
+          <a href="#">Оформить заказ</a>
         </li>
       </ul>
     </nav>
