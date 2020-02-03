@@ -19,44 +19,52 @@
       </ul>
       <ul>
         <li>
-          <button>Поиск</button>
+          <button type="button">Поиск</button>
           <form action="#" method="get">
-            <label for="search" class="visually-hidden">Крем-брюле</label>
+            <label for="search" class="visually-hidden">Поиск</label>
             <input type="search" name="search" id="search" placeholder="Крем-брюле">
           </form>
         </li>
         <li>
-          <button>Вход</button>
+          <button type="button">Вход</button>
           <form action="#" method="post">
-            <label for="email" class="visually-hidden">email@example.com</label>
+            <label for="email" class="visually-hidden">Электронная почта</label>
             <input type="email" name="email" id="email" placeholder="email@example.com">
-            <label for="password" class="visually-hidden">••••••••</label>
+            <label for="password" class="visually-hidden">Пароль</label>
             <input type="password" name="password" id="password" placeholder="••••••••">
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
-            <button>Войти</button>
+            <button type="submit">Войти</button>
           </form>
         </li>
         <li>
-          <button>Корзина</button>
-          <ul>
-            <li>
-              <button type="button"><span class="visually-hidden">Удалить товар из корзины</span></button>
-              <img src="img/product-1.jpg" width="20" height="20"
-                alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-              <p>Пломбир с апельсиновым джемом 1,5 кг х 200 руб.</span> 300 руб.</p>
-            </li>
-            <li>
-              <button type="button"><span class="visually-hidden">Удалить товар из корзины</span></button>
-              <img src="img/product-3.jpg" width="20" height="20"
-                alt="Сливочно-клубничное с  присыпкой из белого шоколада">
-              <p> Клубничный пломбир с присыпкой из белого шоколада 1,5 кг х<span> 200 руб.</span> 450 руб.</p>
-            </li>
-          </ul>
-          <p>Итого:750 руб.</p>
-          <a href="#">Оформить заказ</a>
+          <button type="button">2 товара</button>
+          <table>
+            <tr>
+              <td><button type="button"><span class="visually-hidden">Удалить товар из корзины</span></button></td>
+              <td><img src="img/product-1.jpg" width="20" height="20" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></td>
+              <td>Пломбир с апельсиновым джемом</td>
+              <td>1,5 кг х <span>200 руб.</span></td>
+              <td>300 руб.</td>
+            </tr>
+            <tr>
+              <td><button type="button"><span class="visually-hidden">Удалить товар из корзины</span></button></td>
+              <td><img src="img/product-3.jpg" width="20" height="20" alt="Сливочно-клубничное с  присыпкой из белого шоколада"></td>
+              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td><span>1,5 кг х 200 руб.</span></td>
+              <td>450 руб.</td>
+            </tr>
+            <tr>
+              <td colspan="3">Итого:750 руб.</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <a href="#">Оформить заказ</a>
+              </td>
+            </tr>
+          </table>
         </li>
-      </ul>
+      </ul>  
     </nav>
   </header>
   <main>
@@ -106,13 +114,14 @@
             <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
           </article>
         </li>
-        <article>
-          <img src="img/product-4.jpg" width="100" height="100" alt="Сливочное крем-брюле с карамельной подливкой">
-          <p>
-            415 ₽<span>/кг</span>
-          </p>
-          <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
-        </article>
+        <li>
+          <article>
+            <img src="img/product-4.jpg" width="100" height="100" alt="Сливочное крем-брюле с карамельной подливкой">
+            <p>
+              415 ₽<span>/кг</span>
+            </p>
+            <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
+          </article>
         </li>
         <li>
           <article>
@@ -165,8 +174,7 @@
             <p>
               435 ₽<span>/кг</span>
             </p>
-            <h3><a href="#">Сливочноe с ментоловым сиропом</a>
-              <h3>
+            <h3><a href="#">Сливочноe с ментоловым сиропом</a></h3>
           </article>
         </li>
         <li>
@@ -211,10 +219,10 @@
       <li><a href="#">Наши документы</a></li>
       <li><a href="#">О производстве</a></li>
       <li><a href="#">Экологические стандарты</a></li>
-      <ul>
-        <p>
-          Сделано в<a href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy </a>© 2019
-        </p>
+    </ul>
+    <p>
+      Сделано в<a href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy </a>© 2019
+    </p>
   </footer>
 </body>
 
