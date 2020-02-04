@@ -39,39 +39,88 @@
         </li>
         <li>
           <button type="button">2 товара</button>
+          <button type="button"><span class="visually-hidden">Удалить товар из корзины</span></button>
+          <button type="button"><span class="visually-hidden">Удалить товар из корзины</span></button>
           <table>
             <tr>
-              <td><button type="button"><span class="visually-hidden">Удалить товар из корзины</span></button></td>
-              <td><img src="img/product-1.jpg" width="20" height="20" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></td>
+              <td><img src="img/product-1.jpg" width="20" height="20"
+                  alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></td>
               <td>Пломбир с апельсиновым джемом</td>
               <td>1,5 кг х <span>200 руб.</span></td>
               <td>300 руб.</td>
             </tr>
             <tr>
-              <td><button type="button"><span class="visually-hidden">Удалить товар из корзины</span></button></td>
-              <td><img src="img/product-3.jpg" width="20" height="20" alt="Сливочно-клубничное с  присыпкой из белого шоколада"></td>
+              <td><img src="img/product-3.jpg" width="20" height="20"
+                  alt="Сливочно-клубничное с  присыпкой из белого шоколада"></td>
               <td>Клубничный пломбир с присыпкой из белого шоколада</td>
               <td><span>1,5 кг х 200 руб.</span></td>
               <td>450 руб.</td>
             </tr>
             <tr>
-              <td colspan="3">Итого:750 руб.</td>
-            </tr>
-            <tr>
-              <td colspan="3">
-                <a href="#">Оформить заказ</a>
-              </td>
+              <td colspan="4">Итого:750 руб.</td>
             </tr>
           </table>
+          <a href="#">Оформить заказ</a>
         </li>
-      </ul>  
+      </ul>
     </nav>
   </header>
   <main>
     <h1>Сливочное мороженное</h1>
-    <form>
-      <!-- Здесь будет форма -->
-      <button type="button">Применить</button>
+    <form action="#" method="get">
+      <label for="sorting">Сортировка</label>
+      <select name="sorting" id="sorting">
+        <option value="по популярности">по популярности</option>
+      </select>
+      <label for="price">Цена: 100 руб. – 500 руб.</label>
+      <input type="range" name="price" id="price" max="500" min="100" step='100' value="250">
+      <p>Жирность:</p>
+      <fieldset>
+        <ul>
+          <li>
+            <input type="radio" name="richness" id="fat-zero" value="0%">
+            <label for="fat-zero">0%</label>
+          </li>
+          <li>
+            <input type="radio" name="richness" id="fat-low" value="до 10%">
+            <label for="fat-low">до 10%</label>
+          </li>
+          <li>
+            <input type="radio" name="richness" id="fat-medium" value="до 30%">
+            <label for="fat-medium">до 30%</label>
+          </li>
+          <li>
+            <input type="radio" name="richness" id="fat-high" value="выше 30%">
+            <label for="fat-high">выше 30%</label>
+          </li>
+        </ul>
+      </fieldset>
+      <p>Наполнители:</p>
+      <fieldset>
+        <ul>
+          <li>
+            <input type="checkbox" name="chocolate-filler" id="chocolate-filler" checked>
+            <label for="chocolate-filler">шоколадные</label>
+          </li>
+          <li>
+            <input type="checkbox" name="sugar-filler" id="sugar-filler" checked>
+            <label for="sugar-filler">сахарные присыпки</label>
+          </li>
+          <li>
+            <input type="checkbox" name="fruit" id="fruit">
+            <label for="fruit">фрукты</label>
+          </li>
+          <li>
+            <input type="checkbox" name="syrups" id="syrups">
+            <label for="syrups">сиропы</label>
+          </li>
+          <li>
+            <input type="checkbox" name="jams" id="jams">
+            <label for="jams">джемы</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit">Применить</button>
     </form>
     <ul>
       <li><a href="index.html">Главная</a></li>
