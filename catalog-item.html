@@ -20,14 +20,14 @@
       <ul>
         <li>
           <button type="button">Поиск</button>
-          <form action="#" method="get">
+          <form action="https://echo.htmlacademy.ru" method="get">
             <label for="search" class="visually-hidden">Поиск</label>
             <input type="search" name="search" id="search" placeholder="Крем-брюле">
           </form>
         </li>
         <li>
           <button type="button">Вход</button>
-          <form action="#" method="post">
+          <form action="https://echo.htmlacademy.ru" method="post">
             <label for="email" class="visually-hidden">Электронная почта</label>
             <input type="email" name="email" id="email" placeholder="email@example.com">
             <label for="password" class="visually-hidden">Пароль</label>
@@ -67,15 +67,22 @@
   </header>
   <main>
     <h1>Сливочное мороженное</h1>
-    <form action="#" method="get">
-      <label for="sorting">Сортировка</label>
-      <select name="sorting" id="sorting">
-        <option value="по популярности">по популярности</option>
-      </select>
-      <label for="price">Цена: 100 руб. – 500 руб.</label>
-      <input type="range" name="price" id="price" max="500" min="100" step='100' value="250">
-      <p>Жирность:</p>
+    <form action="https://echo.htmlacademy.ru" method="get">
       <fieldset>
+        <label for="sorting">Сортировка</label>
+        <select name="sorting" id="sorting">
+          <option value="по популярности">по популярности</option>
+          <option value="сначала недорогие">сначала недорогие</option>
+          <option value="сначала дорогие">сначала дорогие</option>
+          <option value="по жирности">по жирности</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label for="price">Цена: 100 руб. – 500 руб.</label>
+        <input type="range" name="price" id="price" max="500" min="100" step='100' value="250">
+      </fieldset>
+      <fieldset>
+        <legend>Жирность:</legend>
         <ul>
           <li>
             <input type="radio" name="richness" id="fat-zero" value="0%">
@@ -95,8 +102,8 @@
           </li>
         </ul>
       </fieldset>
-      <p>Наполнители:</p>
       <fieldset>
+        <legend>Наполнители:</legend>
         <ul>
           <li>
             <input type="checkbox" name="chocolate-filler" id="chocolate-filler" checked>
