@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v20-cyrillic-regular.woff2') format('woff2'), 
+         url('../fonts/roboto-v20-cyrillic-regular.woff') format('woff'); 
+  }
+ 
+@font-face {
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 500;
+     src: local('Roboto Medium'), local('Roboto-Medium'),
+          url('../fonts/roboto-v20-cyrillic-500.woff2') format('woff2'), 
+          url('../fonts/roboto-v20-cyrillic-500.woff') format('woff'); 
+   }
+   
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+         url('../fonts/roboto-v20-cyrillic-700.woff2') format('woff2'), 
+         url('../fonts/roboto-v20-cyrillic-700.woff') format('woff'); 
+  }
+
+body {
+     margin: 0;
+     padding: 0;
+
+     font-family: 'Roboto';
+     font-size: 16px;
+     font-weight: 500;
+     line-height: 1.38;
+     text-align: left;
+     color: #ffffff;
+
+     background-color: #859e90;
+     background-repeat: no-repeat;
+  }
+
+a {
+  text-decoration: none;
+  }
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a  {
+     font-weight: 700;
+     line-height: 1.13;
+     color: #ffffff;
+}
+.list {
+    list-style: none;
+}
+
+  .button {
+     font-size: 14px;
+     line-height: 1.14;
+     list-style: none;
+     color: #ffffff;
+     background-color: var(--greyish-teal);
+}
+
+ .button-full {
+        font-size: 14px;
+        line-height: 1.14;
+        color: #323232;
+        background-color: #ffffff;
+    }
+    
+.page-title {
+    font-size: 24px;
+    line-height: 1.25;
+    color: #323232;
+}
+ 
+ .advantages {
+     color: #323232;
+     width: 1146px;
+     height: 306px;
+     border-radius: 15px;
+     object-fit: contain;
+     background-image:url("../img/wafer-background.jpg");
+     background-repeat: no-repeat;
+   }
+
+ .special-style {
+     color: #323232;
+   }
+
+ .strawberry {
+    width: 560px;
+    height: 220px;
+    object-fit: contain;
+    border-radius: 15px;
+    background-image:url("../img/strawberry-background.jpg");
+    background-repeat: no-repeat;
+   }
+
+ .strawberry a {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.25;
+    text-decoration:underline;
+    color: #323232;
+     }
+
+ .post {
+     color: #5a5a5a;
+     width: 549px;
+     height: 211px;
+     border-radius: 10px;
+     background-color: #f8f7f4;
+     background-image:url("../img/mail-background.jpg");
+     background-repeat: no-repeat;  
+    }
+
+  #mailing {
+     line-height: 1.5;
+     color: #999999;
+    }
+
+  .red-button {
+     font-size: 18px;
+     font-weight:700;
+     line-height: 1.33;
+     color: #fefefe;
+     background-image: linear-gradient(to top, #e74a35, #f26843);
+    }
+  
+  .main-footer a {
+     font-size: 13px;
+     font-weight: 700;
+     color: #ffffff;
+    }
+
+  .html-academy {
+     font-size: 12px;
+     line-height: 1.5;
+     color: #fefefe;
+    }
+
+  .breadcrumbs {
+    font-size: 14px;
+    line-height: 1.14;
+   }
+
+   .page-number-two {
+    font-size: 35px;
+    line-height: 1.17
+   }
+
+   a[href^="tel:"] {
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  span {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+    }
+
+.catalog p {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+    }
+
+.catalog  a {
+    color: #ffffff;
+    }
+
+
+  

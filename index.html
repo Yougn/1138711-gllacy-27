@@ -4,18 +4,20 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <nav>
       <a href="index.html">
-        <img src="img/logo.svg" width="80" height="30" alt="Логотип Глейсишопа">
+        <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейсишопа">
       </a>
-      <ul>
+      <ul class="site-navigation">
         <li>
           <a href="catalog-item.html">Каталог</a>
-          <ul>
+          <ul class="list">
             <li><a href="#">Новинки</a></li>
             <li><a href="#">Сливочное</a></li>
             <li><a href="#">Щербеты</a></li>
@@ -26,16 +28,16 @@
         <li><a href="delivery.html">Доставка и оплата</a></li>
         <li><a href="aboutus.html">О компании</a></li>
       </ul>
-      <ul>
+      <ul class="site-navigation">
         <li>
-          <button type="button">Поиск</button>
+          <button type="button" class="button">Поиск</button>
           <form action="https://echo.htmlacademy.ru" method="get">
             <label for="search" class="visually-hidden">Поиск</label>
             <input type="search" name="search" id="search" placeholder="Крем-брюле">
           </form>
         </li>
         <li>
-          <button type="button">Вход</button>
+          <button type="button" class="button">Вход</button>
           <form action="https://echo.htmlacademy.ru" method="post">
             <label for="email" class="visually-hidden">Электронная почта</label>
             <input type="email" name="email" id="email" placeholder="email@example.com">
@@ -47,7 +49,7 @@
           </form>
         </li>
         <li>
-          <button type="button">Пусто</button>
+          <button type="button" class="button">Пусто</button>
         </li>
       </ul>
     </nav>
@@ -70,13 +72,13 @@
       </p>
       <a href="#">Хочу шоколадки!</a>
     </section>
-    <section>
-      <h1> Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
-      <ul>
+    <section class="advantages">
+      <h1 class="page-title"> Магазин Глэйси — это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
+      <ul class="list">
         <li>
           Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
           и проверенных временем технологий.
-        <li>
+        </li>
         <li>
           Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
           связывает
@@ -88,7 +90,7 @@
           Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
           растаять
           в пути и позволяет сохранить превосходный вкус.</li>
-      </ul>
+      </ul c>
     </section>
     <section>
       <ul>
@@ -132,22 +134,22 @@
         </li>
       </ul>
     </section>
-    <article>
-      <p>Новое в нашем блоге</p>
+    <article class="strawberry">
+      <p class="special-style">Новое в нашем блоге</p c>
       <h4><a href="https://ten-ways.com">10 способов сервировок фруктовых щербетов к столу</a></h4>
     </article>
-    <section>
+    <section class="post">
       <h4>Рассылка</h4>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
           Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
           Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-        </p>
+        </p с>
         <label for="mailing" class="visually-hidden">Рассылка</label>
         <input type="email" name="mailing" id="mailing" placeholder="email@example.com">
-        <button type="submit">Отправить</button>
+        <button type="submit" class="red-button">Отправить</button>
       </form>
-    </section>
+    </section class="special-style">
     <div>
       <img src="map.svg" width="400" height="200" alt="Карта">
     </div>
@@ -181,20 +183,20 @@
       </form>
     </div>
   </main>
-  <footer>
+  <footer class="main-footer">
     <ul>
       <li><a href="#">Твиттер</a></li>
       <li><a href="#">Вконтакте</a></li>
       <li><a href="#">Фейсбук</a></li>
       <li><a href="#">Инстаграм</a></li>
     </ul>
-    <ul>
+    <ul  class="list">
       <li><a href="#">Для поставщиков</a></li>
       <li><a href="#">Наши документы</a></li>
       <li><a href="#">О производстве</a></li>
       <li><a href="#">Экологические стандарты</a></li>
     </ul>
-    <p>
+    <p class="html-academy">
       Сделано в<a href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy </a>© 2019
     </p>
   </footer>
