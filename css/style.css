@@ -1,26 +1,26 @@
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'),
+    src: local("Roboto"), local("Roboto-Regular"),
          url('../fonts/roboto-v20-cyrillic-regular.woff2') format('woff2'), 
          url('../fonts/roboto-v20-cyrillic-regular.woff') format('woff'); 
 }
  
 @font-face {
-     font-family: 'Roboto';
+     font-family: "Roboto";
      font-style: normal;
      font-weight: 500;
-     src: local('Roboto Medium'), local('Roboto-Medium'),
+     src: local("Roboto Medium"), local("Roboto-Medium"),
           url('../fonts/roboto-v20-cyrillic-500.woff2') format('woff2'), 
           url('../fonts/roboto-v20-cyrillic-500.woff') format('woff'); 
 }
    
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    src: local('Roboto Bold'), local('Roboto-Bold'),
+    src: local("Roboto Bold"), local("Roboto-Bold"),
          url('../fonts/roboto-v20-cyrillic-700.woff2') format('woff2'), 
          url('../fonts/roboto-v20-cyrillic-700.woff') format('woff'); 
 }
@@ -81,10 +81,6 @@ a {
     background-repeat: no-repeat;
 }
 
- .note {
-    color: #323232;
-}
-
  .strawberry {
     border-radius: 15px;
     background-image:url("../img/strawberry-background.jpg");
@@ -97,6 +93,10 @@ a {
     line-height: 1.25;
     text-decoration:underline;
     color: #323232;
+}
+
+.note {
+  color: #323232;
 }
 
  .post {
@@ -133,25 +133,32 @@ a {
 
   .breadcrumbs {
     font-size: 14px;
+    font-weight: 400;
     line-height: 1.14;
 }
 
-  .extra-title {
+  .subject {
     font-size: 35px;
     line-height: 1.17
 }
 
-   .tel {
-      font-size: 22px;
-      color: #ffffff;
-      font-weight: bold;
-      text-decoration: none;
-}
+  .tel {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: right;
+    color: #ffffff;
+  }
 
-  span {
+  .small {
     font-size: 30px;
     font-weight: 700;
     line-height: 1.5;
+}
+
+  .big {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1;
 }
 
 .product p {
@@ -163,6 +170,108 @@ a {
 .product  a {
   color: #ffffff;
 }
+
+.subtitle {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.01;
+  text-align: center;
+}
+.trade {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+}
+
+.raspberries {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.22;
+  background-image:url("../img/raspberries-background.jpg");
+  background-repeat: no-repeat; 
+}
+
+.caption-left {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: left;
+  }
+
+  .chocolate {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.22;
+    background-image:url("../img/chocolate-background.jpg");
+    background-repeat: no-repeat; 
+  }
+
+  .caption-right {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: right;
+    }
+
+.color {
+  color: #fefefe;
+}
+
+
+.address {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.43;
+  color: #323232;
+  background-color:#ffffff;
+}
+
+.requisite {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.33;
+  color: #323232;
+}
+
+.quality {
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.choice {
+  line-height: 1.13;
+  color: #ffffff;
+  background-color: #aabcb2;
+}
+
+.grey-button {
+  line-height: 1.13;
+  color: #ffffff;
+  background-color: #aabcb2;
+}
+
+.item li:nth-child(1) a,
+.item li:nth-child(3) a,
+.item li:nth-child(4) a,
+.item li:nth-child(5) a,
+.item li:nth-child(6) a,
+.item li:last-child a {
+  line-height: 1.13;
+  text-align: right;
+  color: #ffffff;
+}
+
+.item li:nth-child(2) a {
+  line-height: 1.13;
+  text-align: right;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+
+
+
 
 
   

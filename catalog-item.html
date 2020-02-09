@@ -68,11 +68,11 @@
     </nav>
   </header>
   <main>
-    <h1 class="extra-title">Сливочное мороженное</h1>
+    <h1 class="subject">Сливочное мороженное</h1>
     <form action="https://echo.htmlacademy.ru" method="get">
       <fieldset>
-        <label for="sorting">Сортировка</label>
-        <select name="sorting" id="sorting">
+        <label for="sorting" class="quality">Сортировка</label>
+        <select name="sorting" id="sorting" class="choice">
           <option value="по популярности">по популярности</option>
           <option value="сначала недорогие">сначала недорогие</option>
           <option value="сначала дорогие">сначала дорогие</option>
@@ -80,12 +80,12 @@
         </select>
       </fieldset>
       <fieldset>
-        <label for="price">Цена: 100 руб. – 500 руб.</label>
+        <label for="price" class="quality">Цена: 100 руб. – 500 руб.</label>
         <input type="range" name="price" id="price" max="500" min="100" step='100' value="250">
       </fieldset>
       <fieldset>
-        <legend>Жирность:</legend>
-        <ul>
+        <legend class="quality">Жирность:</legend>
+        <ul class="choice">
           <li>
             <input type="radio" name="richness" id="fat-zero" value="0%">
             <label for="fat-zero">0%</label>
@@ -105,8 +105,8 @@
         </ul>
       </fieldset>
       <fieldset>
-        <legend>Наполнители:</legend>
-        <ul>
+        <legend class="quality">Наполнители:</legend>
+        <ul class="choice">
           <li>
             <input type="checkbox" name="chocolate-filler" id="chocolate-filler" checked>
             <label for="chocolate-filler">шоколадные</label>
@@ -129,7 +129,7 @@
           </li>
         </ul>
       </fieldset>
-      <button type="submit">Применить</button>
+      <button type="submit" class="grey-button">Применить</button>
     </form>
     <ul class="list breadcrumbs">
       <li><a href="index.html">Главная</a></li>
@@ -148,7 +148,7 @@
             <img src="img/product-1.jpg" width="267" height="267"
               alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <p>
-              310 ₽<span>/кг</span>
+              310 ₽<span class="small">/кг</span c>
             </p>
             <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
           </article>
@@ -157,7 +157,7 @@
           <article class="product">
             <img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
             <p>
-              380 ₽<span>/кг</span>
+              380 ₽<span class="small">/кг</span>
             </p>
             <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
           </article>
@@ -167,7 +167,7 @@
             <img src="img/product-3.jpg" width="267" height="267"
               alt="Сливочно-клубничное с  присыпкой из белого шоколада">
             <p>
-              355 ₽<span>/кг</span>
+              355 ₽<span class="small">/кг</span>
             </p>
             <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
           </article>
@@ -176,7 +176,7 @@
           <article class="product">
             <img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
             <p>
-              415 ₽<span>/кг</span>
+              415 ₽<span class="small">/кг</span>
             </p>
             <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
           </article>
@@ -185,7 +185,7 @@
           <article class="product">
             <img src="img/product-5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
             <p>
-              325 ₽<span>/кг</span>
+              325 ₽<span class="small">/кг</span>
             </p>
             <h3><a href="#">Сливочное с брусничным джемом</a></h3>
           </article>
@@ -194,7 +194,7 @@
           <article class="product">
             <img src="img/product-6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники ">
             <p>
-              410 ₽<span>/кг</span>
+              410 ₽<span class="small">/кг</span>
             </p>
             <h3><a href="#">Сливочно-черничное с цельными ягодами черники </a></h3>
           </article>
@@ -203,7 +203,7 @@
           <article class="product">
             <img src="img/product-7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
             <p>
-              375 ₽<span>/кг</span>
+              375 ₽<span class="small">/кг</span>
             </p>
             <h3><a href="#">Сливочно-лимонное с карамельной присыпкой</a></h3>
           </article>
@@ -212,7 +212,7 @@
           <article class="product">
             <img src="img/product-8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
             <p>
-              320 ₽<span>/кг</span>
+              320 ₽<span class="small">/кг</span>
             </p>
             <h3><a href="#">Сливочное с шоколадной стружкой</a></h3>
           </article>
@@ -221,7 +221,7 @@
           <article class="product">
             <img src="img/product-9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
             <p>
-              440 ₽<span>/кг</span>
+              440 ₽<span class="small">/кг</span>
             </p>
             <h3><a href="#">Сливочно-ванильное с кусочками шоколада</a></h3>
           </article>
@@ -230,7 +230,7 @@
           <article class="product">
             <img src="img/product-10.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
             <p>
-              435 ₽<span>/кг</span>
+              435 ₽<span class="small">/кг</span>
             </p>
             <h3><a href="#">Сливочноe с ментоловым сиропом</a></h3>
           </article>
@@ -239,7 +239,7 @@
           <article class="product">
             <img src="img/product-11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
             <p>
-              355 ₽/<span>/кг</span>
+              355 ₽/<span class="small">/кг</span>
             </p>
             <h3><a href="#">Сливочное с кусочками черного шоколада</a></h3>
           </article>
@@ -248,13 +248,13 @@
           <article class="product">
             <img src="img/product-12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
             <p>
-              420 ₽<span>/кг</span>
+              420 ₽<span class="small">/кг</span>
             </p>
             <h3><a href="#">Сливочное с мятным сиропом</a></h3>
           </article>
         </li>
       </ul>
-      <ul>
+      <ul class="item">
         <li><a href="#">Предыдущая страница</a></li>
         <li><a>1</a></li>
         <li><a href="#">2</a></li>
