@@ -71,8 +71,8 @@
     <h1 class="subject">Сливочное мороженное</h1>
     <form action="https://echo.htmlacademy.ru" method="get">
       <fieldset>
-        <label for="sorting" class="quality">Сортировка</label>
-        <select name="sorting" id="sorting" class="choice">
+        <label for="sorting" class="filter">Сортировка</label>
+        <select name="sorting" id="sorting" class="option">
           <option value="по популярности">по популярности</option>
           <option value="сначала недорогие">сначала недорогие</option>
           <option value="сначала дорогие">сначала дорогие</option>
@@ -80,12 +80,12 @@
         </select>
       </fieldset>
       <fieldset>
-        <label for="price" class="quality">Цена: 100 руб. – 500 руб.</label>
+        <label for="price" class="filter">Цена: 100 руб. – 500 руб.</label>
         <input type="range" name="price" id="price" max="500" min="100" step='100' value="250">
       </fieldset>
       <fieldset>
-        <legend class="quality">Жирность:</legend>
-        <ul class="choice">
+        <legend class="filter">Жирность:</legend>
+        <ul class="option">
           <li>
             <input type="radio" name="richness" id="fat-zero" value="0%">
             <label for="fat-zero">0%</label>
@@ -105,8 +105,8 @@
         </ul>
       </fieldset>
       <fieldset>
-        <legend class="quality">Наполнители:</legend>
-        <ul class="choice">
+        <legend class="filter">Наполнители:</legend>
+        <ul class="option">
           <li>
             <input type="checkbox" name="chocolate-filler" id="chocolate-filler" checked>
             <label for="chocolate-filler">шоколадные</label>
@@ -131,7 +131,7 @@
       </fieldset>
       <button type="submit" class="grey-button">Применить</button>
     </form>
-    <ul class="list breadcrumbs">
+    <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
       <li><a href="catalog.html">Каталог</a></li>
       <li><a>Сливочное</a></li>
@@ -254,7 +254,7 @@
           </article>
         </li>
       </ul>
-      <ul class="item">
+      <ul class="inner-list">
         <li><a href="#">Предыдущая страница</a></li>
         <li><a>1</a></li>
         <li><a href="#">2</a></li>
@@ -272,7 +272,7 @@
       <li><a href="#">Фейсбук</a></li>
       <li><a href="#">Инстаграм</a></li>
     </ul>
-    <ul class="list">
+    <ul class="information-list">
       <li><a href="#">Для поставщиков</a></li>
       <li><a href="#">Наши документы</a></li>
       <li><a href="#">О производстве</a></li>
