@@ -41,28 +41,37 @@ body {
 
 .container {
   width:1200px;
-  margin:auto;
+  margin:0 auto;
 }
 
 .navigation {
   display:flex;
+  align-items:center;
   margin-left:27px;
   margin-right:27px;
 }
 
 .site-navigation {
+  margin:0;
+  padding:0;
   display:flex;
-  justify-content: space-between;
-  width:350px;
   list-style: none;
 }
 
+.site-navigation li {
+  padding: 0 27px;
+}
+
 .user-navigation {
+  margin:0;
+  padding:0;
+  margin-left:auto;
   display:flex;
-  justify-content: space-between;
-  margin-left:376px;
-  width:245px;
   list-style: none;
+}
+
+.user-navigation li {
+  padding: 0 27px;
 }
 
 a {
@@ -73,10 +82,6 @@ a {
   font-weight: 700;
   line-height: 1.13;
   color: #ffffff;
-}
-
-.products-list {
-  list-style: none;
 }
 
 .button {
@@ -94,6 +99,8 @@ a {
 .page-title {
   font-size: 24px;
   line-height: 1.25;
+  padding-left:10px;
+  padding-top:20px;
   color: #323232;
 }  
 
@@ -107,22 +114,24 @@ a {
 }
 
 .advantages-list {
+ 
+  display:flex;
+  flex-wrap:wrap;
   list-style: none;
 }
 
-.container-advantages {
-  width:1200px;
-  margin:auto;
-  display:flex;
-  justify-content: center;
+.advantages-list li {
+  width:50%;
+  padding: 10px 0px;
 }
 
 .container-strawberry-post {
   width:1200px;
-  margin:auto;
+  margin:0 auto;
   display:flex;
   justify-content: space-between;
 }
+
  .strawberry {
     width:561px;
     margin-left:27px;
@@ -144,13 +153,13 @@ a {
 }
 
  .post {
-     width:561px;
-     margin-right:27px;
-     color: #5a5a5a;
-     border-radius: 15px;
-     background-color: #f8f7f4;
-     background-image:url("../img/mail-background.jpg");
-     background-repeat: no-repeat;  
+    width:561px;
+    margin-right:27px;
+    color: #5a5a5a;
+    border-radius: 15px;
+    background-color: #f8f7f4;
+    background-image:url("../img/mail-background.jpg");
+    background-repeat: no-repeat;  
 }
 
   .mailing {
@@ -168,7 +177,7 @@ a {
   
   .main-footer {
     display:flex;
-    margin-left: auto;
+    align-items:center;
   }
 
   .main-footer a {
@@ -178,17 +187,26 @@ a {
   }
 
   .footer-social {
-    display:flex;
-    justify-content: space-between;
+    margin:0;
+    padding:0;
     list-style: none;
+    display:flex;
+  }
+
+  .footer-social li {
+    padding:0 5px;
   }
 
   .information-list {
     margin:auto;
     display:flex;
-    align-content:space-around;
-    justify-items: auto;
-     list-style: none;
+    flex-wrap:wrap;
+    max-width:350px;
+    list-style: none;
+  }
+
+  .information-list li {
+    width:50%;
   }
 
   .html-academy {
@@ -198,10 +216,16 @@ a {
   }
 
   .breadcrumbs {
+    display:flex;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.14;
     list-style: none;
+}
+
+.breadcrumbs li {
+  padding-top:28px;
+  padding-right:10px;
 }
 
   .subject {
@@ -252,10 +276,25 @@ a {
   color: #ffffff;
 }
 
+.information {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 220px;
+  margin-left: auto
+}
+
+.container-raspberries-chocolate {
+  width:1200px;
+  margin:0 auto;
+  display:flex;
+  justify-content: space-between;
+}
+
 .raspberries {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.22;
+  border-radius: 15px;
   background-image:url("../img/raspberries-background.jpg");
   background-repeat: no-repeat; 
 }
@@ -277,6 +316,7 @@ a {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.22;
+  border-radius: 15px;
   background-image:url("../img/chocolate-background.jpg");
   background-repeat: no-repeat; 
 }
@@ -285,7 +325,7 @@ a {
   font-size: 35px;
   font-weight: 700;
   line-height: 1.17;
-  text-align: right;
+  text-align: left;
 }
 
 .color-text {
@@ -325,6 +365,15 @@ a {
   background-color: #aabcb2;
 }
 
+.inner-list {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.inner-list li {
+  padding: 0 10px;
+}
 
 .inner-list a {
   line-height: 1.13;
@@ -336,14 +385,17 @@ a {
   background-color: #ffffff;
 }
 
-.container-catalog {
-  width:1200px;
-  margin:auto;
+.product-list {
   display:flex;
   flex-wrap:wrap;
- 
-}
+  margin:0;
+  padding:0;
+  list-style: none;
+ }
 
+ .product-list  li {
+   width:25%;
+   padding:6,5px; }
 
 
 

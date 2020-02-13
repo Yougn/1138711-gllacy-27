@@ -13,7 +13,7 @@
     <div class="container">
       <nav class="navigation">
         <a href="index.html">
-          <img src="img/logo.svg" width="154" height="64" alt=" Логотип Глейсишопа">
+          <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейсишопа">
         </a>
         <ul class="site-navigation">
           <li>
@@ -43,17 +43,17 @@
           </li>
           <li>
             <button type="button" class="button">Вход</button>
+            <!--
             <form action="https://echo.htmlacademy.ru" method="post">
-              <!--
               <label for="email" class="visually-hidden">Электронная почта</label>
               <input type="email" name="email" id="email" placeholder="email@example.com">
               <label for="password" class="visually-hidden">Пароль</label>
               <input type="password" name="password" id="password" placeholder="••••••••">
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
-               -->
               <button type="submit">Войти</button>
             </form>
+             -->
           </li>
           <li>
             <button type="button" class="button">Пусто</button>
@@ -63,27 +63,33 @@
     </div>
   </header>
   <main>
-    <p>
-      С 10 до 20, ежедневно
-      <a href="tel:88124502525" class="tel">8 812 450-25-25</a>
-    </p>
-    <h2 class="subtitle">Крем брюле и пломбир с малиновым джемом</h2>
-    <a href="#" class="slider-button">Давайте оба!</a>
-    <section class=" raspberries">
-      <h3 class="caption-left">Малинка даром!</h3>
-      <p class="offer">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья
-        бесплатно.</p c>
-      <a href="#" class="red-button color">Хочу варенье!</a>
-    </section>
-    <section class="chocolate">
-      <h3 class="caption-right">Шоколадки даром!</h3>
-      <p class="offer">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки
-        совершенно
-        бесплатно.
+    <div class="container">
+      <p class="information">
+        С 10 до 20, ежедневно
+        <a href="tel:88124502525" class="tel">8 812 450-25-25</a>
       </p>
-      <a href="#" class="red-button color-text">Хочу шоколадки!</a>
-    </section>
-    <div class="container-advantages">
+    </div>
+    <div class="container">
+      <h2 class="subtitle">Крем брюле и пломбир с малиновым джемом</h2>
+      <a href="#" class="slider-button">Давайте оба!</a>
+    </div>
+    <div class="container-raspberries-chocolate">
+      <section class=" raspberries">
+        <h3 class="caption-left">Малинка даром!</h3>
+        <p class="offer">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья
+          бесплатно.</p c>
+        <a href="#" class="red-button color">Хочу варенье!</a>
+      </section>
+      <section class="chocolate">
+        <h3 class="caption-right">Шоколадки даром!</h3>
+        <p class="offer">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки
+          совершенно
+          бесплатно.
+        </p>
+        <a href="#" class="red-button color-text">Хочу шоколадки!</a>
+      </section>
+    </div>
+    <div class="container">
       <section class="advantages">
         <h1 class="page-title"> Магазин Глэйси — это онлайн и офлайн-магазин по продаже мороженого собственного
           производства на развес</h1>
@@ -106,48 +112,50 @@
         </ul>
       </section>
     </div>
-    <section>
-      <ul>
-        <li>
-          <article class="product">
-            <img src="img/product-1.jpg" width="267" height="267"
-              alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-            <p class="big">
-              310 ₽<span class="small">/кг</span>
-            </p>
-            <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-          </article>
-        </li>
-        <li>
-          <article class="product">
-            <img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-            <p class="big">
-              380 ₽<span class="small">/кг</span>
-            </p>
-            <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
-          </article>
-        </li>
-        <li>
-          <article class="product">
-            <img src="img/product-3.jpg" width="267" height="267"
-              alt="Сливочно-клубничное с  присыпкой из белого шоколада">
-            <p class="big">
-              355 ₽<span class="small">/кг</span>
-            </p>
-            <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
-          </article>
-        </li>
-        <li>
-          <article class="product">
-            <img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-            <p class="big">
-              415 ₽<span class="small">/кг</span>
-            </p>
-            <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
-          </article>
-        </li>
-      </ul>
-    </section>
+    <div class="container">
+      <section>
+        <ul class="product-list">
+          <li>
+            <article class="product">
+              <img src="img/product-1.jpg" width="267" height="267"
+                alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              <p class="big">
+                310 ₽<span class="small">/кг</span>
+              </p>
+              <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
+            </article>
+          </li>
+          <li>
+            <article class="product">
+              <img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+              <p class="big">
+                380 ₽<span class="small">/кг</span>
+              </p>
+              <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
+            </article>
+          </li>
+          <li>
+            <article class="product">
+              <img src="img/product-3.jpg" width="267" height="267"
+                alt="Сливочно-клубничное с  присыпкой из белого шоколада">
+              <p class="big">
+                355 ₽<span class="small">/кг</span>
+              </p>
+              <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+            </article>
+          </li>
+          <li>
+            <article class="product">
+              <img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+              <p class="big">
+                415 ₽<span class="small">/кг</span>
+              </p>
+              <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </div>
     <div class="container-strawberry-post">
       <article class="strawberry">
         <p class="note">Новое в нашем блоге</p>
@@ -167,10 +175,11 @@
         </form>
       </section>
     </div>
-    <div>
+    <div class="container">
       <img src="img/map-background.png" width="1200" height="430" alt="Карта">
     </div>
-    <div>
+    <!--
+    <div class="container">
       <p class="address">
         Адрес главного офиса
         и офлайн-магазина:
@@ -199,6 +208,7 @@
         <button type="submit">Отправить</button>
       </form>
     </div>
+    -->
   </main>
   <div class="container">
     <footer class="main-footer">
