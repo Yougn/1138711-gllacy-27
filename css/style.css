@@ -38,12 +38,35 @@ body {
     background-color: #859e90;
 }
 
-a {
-  text-decoration: none;
+
+.container {
+  width:1200px;
+  margin:auto;
+}
+
+.navigation {
+  display:flex;
+  margin-left:27px;
+  margin-right:27px;
 }
 
 .site-navigation {
+  display:flex;
+  justify-content: space-between;
+  width:350px;
   list-style: none;
+}
+
+.user-navigation {
+  display:flex;
+  justify-content: space-between;
+  margin-left:376px;
+  width:245px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .site-navigation a  {
@@ -56,16 +79,16 @@ a {
   list-style: none;
 }
 
-  .button {
-    font-size: 14px;
-    line-height: 1.14;
-    color: #ffffff;
-    background-color: #9eb2a6;
+.button {
+  font-size: 14px;
+  line-height: 1.14;
+  color: #ffffff;
+  background-color: #9eb2a6;
 }
 
  .button-full {
-    color: #323232;
-    background-color: #ffffff;
+  color: #323232;
+  background-color: #ffffff;
 }
     
 .page-title {
@@ -73,19 +96,36 @@ a {
   line-height: 1.25;
   color: #323232;
 }  
- 
- .advantages {
-    color: #323232;
-    border-radius: 15px;
-    background-image:url("../img/wafer-background.jpg");
-    background-repeat: no-repeat;
+
+
+.advantages {
+  width:1148px;
+  color: #323232;
+  border-radius: 15px;
+  background-image:url("../img/wafer-background.jpg");
+  background-repeat: no-repeat;
 }
 
 .advantages-list {
   list-style: none;
 }
 
+.container-advantages {
+  width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content: center;
+}
+
+.container-strawberry-post {
+  width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content: space-between;
+}
  .strawberry {
+    width:561px;
+    margin-left:27px;
     border-radius: 15px;
     background-image:url("../img/strawberry-background.jpg");
     background-repeat: no-repeat;
@@ -104,7 +144,10 @@ a {
 }
 
  .post {
+     width:561px;
+     margin-right:27px;
      color: #5a5a5a;
+     border-radius: 15px;
      background-color: #f8f7f4;
      background-image:url("../img/mail-background.jpg");
      background-repeat: no-repeat;  
@@ -123,21 +166,36 @@ a {
     background-image: linear-gradient(to top, #e74a35, #f26843);
 }
   
+  .main-footer {
+    display:flex;
+    margin-left: auto;
+  }
+
   .main-footer a {
     font-size: 13px;
     font-weight: 700;
     color: #ffffff;
   }
 
-  .information-list {
+  .footer-social {
+    display:flex;
+    justify-content: space-between;
     list-style: none;
+  }
+
+  .information-list {
+    margin:auto;
+    display:flex;
+    align-content:space-around;
+    justify-items: auto;
+     list-style: none;
   }
 
   .html-academy {
     font-size: 12px;
     line-height: 1.5;
     color: #fefefe;
-}
+  }
 
   .breadcrumbs {
     font-size: 14px;
@@ -268,15 +326,24 @@ a {
 }
 
 
-.inner-list li a {
+.inner-list a {
   line-height: 1.13;
   color: #ffffff;
 }
 
-.inner-list li:nth-child(2) a {
+.inner-list .inner-color {
   color: #000000;
   background-color: #ffffff;
 }
+
+.container-catalog {
+  width:1200px;
+  margin:auto;
+  display:flex;
+  flex-wrap:wrap;
+ 
+}
+
 
 
 
