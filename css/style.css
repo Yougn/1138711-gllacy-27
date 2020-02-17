@@ -44,23 +44,15 @@ body {
   margin: 0 auto;
 }
 
+.main-header {
+  position: relative;
+}
+
 .navigation {
   display: flex;
   align-items: center;
   margin-left: 27px;
   margin-right: 27px;
-  position: relative;
-}
-
-.site-navigation {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style: none;
-}
-
-.site-navigation li {
-  padding: 0 27px;
 }
 
 .user-navigation {
@@ -72,17 +64,20 @@ body {
 }
 
 .user-navigation li {
+  position:relative;
   padding: 0 27px;
 }
 
-a {
-  text-decoration: none;
-}
-
-.site-navigation a  {
-  font-weight: 700;
-  line-height: 1.13;
-  color: #ffffff;
+.popap-search {
+  position: absolute;
+  display:none;
+  top: 50px;
+  left: 50px;
+  width: 100%;
+  height: 100%;
+  margin:auto;
+  opacity:0;
+  background-color:red;
 }
 
 .button {
@@ -91,6 +86,99 @@ a {
   color: #ffffff;
   background-color: #9eb2a6;
 }
+.button:hover {
+  display:block;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-navigation {
+  position:relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.site-navigation li {
+   padding: 0 27px;
+}
+
+.site-navigation a  {
+  font-weight: 700;
+  line-height: 1.13;
+  color: #ffffff;
+}
+
+.menu-catalog:hover {
+  font-size: 16px;
+  line-height: 1.13;
+  color: #333333;
+  width: 87px;
+  height: 32px;
+  background-color: #f7f6f3;
+}
+
+.menu-catalog:active {
+   color: white;
+   background-color: #d07058;
+}
+
+.site-navigation li:hover .catalog-list {
+  display: block;
+}
+
+.catalog-list {
+  position:absolute;
+  display: none;
+    top: 30px;
+    left: 0px;
+    width: 143px;
+    height: 200px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-radius:5px;
+  background-color: #f8f7f4;
+}
+
+.catalog-list a {
+  display: block;
+  padding: 10px 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.14;
+  color: #323232;
+}
+
+.catalog-list li:first-child a {
+  font-weight: bold;
+  border-bottom:1px solid black;
+}
+
+.catalog-list li:nth-child(3):hover {
+  background-color:#fbded7;
+}
+
+.catalog-list li:nth-child(3):active {
+  background-color: #f6b5a5;
+}
+
+
+
+
+
+
 
  .button-full {
   color: #323232;
@@ -114,7 +202,6 @@ a {
 }
 
 .advantages-list {
- 
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -278,8 +365,6 @@ a {
   font-weight: 700;
   text-align: center;
   color: #ffffff;
-  width: 280px;
-  height: 64px;
   background-image: linear-gradient(to top, #e74a35, #f26843);
 }
 
@@ -290,13 +375,11 @@ a {
   text-align: right;
   position:absolute;
   top:50px;
-  right:470px;
+  right:360px;
+  max-width:170px;
 }
 
 .tel {
-  position:absolute;
-  top:20px;
-  left:-10px;
   font-size: 22px;
   font-weight: bold;
   text-align: right;
@@ -413,7 +496,10 @@ a {
 
  .product-list  li {
    width: 25%;
-   padding: 6,5px; }
+   padding: 0px; 
+}
+
+  
 
 
 

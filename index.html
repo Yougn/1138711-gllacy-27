@@ -9,41 +9,36 @@
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <nav class="navigation">
-        <a href="index.html">
-          <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейсишопа">
-        </a>
-        <ul class="site-navigation">
-          <li>
-            <a href="catalog-item.html">Каталог</a>
-            <!--
-          <ul class="products-list">
+  <header class="container main-header">
+    <nav class="navigation">
+      <a href="index.html">
+        <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейсишопа">
+      </a>
+      <ul class="site-navigation">
+        <li>
+          <a href="catalog-item.html" class="menu-catalog">Каталог</a>
+          <ul class="catalog-list">
             <li><a href="#">Новинки</a></li>
             <li><a href="#">Сливочное</a></li>
             <li><a href="#">Щербеты</a></li>
             <li><a href="#">Фруктовый лед</a></li>
             <li><a href="#">Мелорин</a></li>
           </ul>
-          -->
-          </li>
-          <li><a href="delivery.html">Доставка и оплата</a></li>
-          <li><a href="aboutus.html">О компании</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li>
-            <button type="button" class="button">Поиск</button>
-            <!--
-            <form action="https://echo.htmlacademy.ru" method="get">
-              <label for="search" class="visually-hidden">Поиск</label>
-              <input type="search" name="search" id="search" placeholder="Крем-брюле">
-            </form>
-            -->
-          </li>
-          <li>
-            <button type="button" class="button">Вход</button>
-            <!--
+        </li>
+        <li><a href="delivery.html">Доставка и оплата</a></li>
+        <li><a href="aboutus.html">О компании</a></li>
+      </ul>
+      <ul class="user-navigation">
+        <li>
+          <button type="button" class="button" id="search">Поиск</button>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <label for="search" class="visually-hidden">Поиск</label>
+            <input type="search" name="search" id="search" class="popap-search" placeholder="Крем-брюле">
+          </form>
+        </li>
+        <li>
+          <button type="button" class="button">Вход</button>
+          <!--
             <form action="https://echo.htmlacademy.ru" method="post">
               <label for="email" class="visually-hidden">Электронная почта</label>
               <input type="email" name="email" id="email" placeholder="email@example.com">
@@ -53,14 +48,13 @@
               <a href="#">Новая регистрация</a>
               <button type="submit">Войти</button>
             </form>
-             -->
-          </li>
-          <li>
-            <button type="button" class="button">Пусто</button>
-          </li>
-        </ul>
-      </nav>
-    </div>
+          -->
+        </li>
+        <li>
+          <button type="button" class="button">Пусто</button>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main>
     <div class="container">
@@ -68,7 +62,7 @@
         С 10 до 20, ежедневно
         <a href="tel:88124502525" class="tel">8 812 450-25-25</a>
       </p>
-        <h2 class="subtitle">Крем брюле и пломбир с малиновым джемом</h2>
+      <h2 class="subtitle">Крем брюле и пломбир с малиновым джемом</h2>
       <a href="#" class="slider-button">Давайте оба!</a>
     </div>
     <div class="container raspberries-chocolate">
@@ -104,7 +98,8 @@
             Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
             Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
           <li>
-            Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
+            Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
+            мороженому
             растаять
             в пути и позволяет сохранить превосходный вкус.</li>
         </ul>
@@ -169,7 +164,7 @@
           <!--
         <label for="mailing" class="visually-hidden">Рассылка</label>
         <input type="email" class="mailing" name="mailing" id="mailing" placeholder="email@example.com">-->
-        <button type="submit" class="red-button">Отправить</button>
+          <button type="submit" class="red-button">Отправить</button>
         </form>
       </section>
     </div>
