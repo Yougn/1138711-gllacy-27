@@ -16,7 +16,7 @@
           <img src="img/logo.svg" width="154" height="64" alt=" Логотип Глейсишопа">
         </a>
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="catalog.html" class="button-catalog current">Каталог</a></li>
           <li><a href="delivery.html">Доставка и оплата</a></li>
           <li><a href="aboutus.html">О компании</a></li>
         </ul>
@@ -45,31 +45,31 @@
             -->
           </li>
           <li>
-            <button type="button" class="button button-full">2 товара</button>
-            <!--
-            <button type="button"><span class="visually-hidden">Удалить товар из корзины</span></button>
-            <button type="button"><span class="visually-hidden">Удалить товар из корзины</span></button>
-            <table>
-              <tr>
-                <td><img src="img/product-1.jpg" width="20" height="20"
-                    alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></td>
-                <td>Пломбир с апельсиновым джемом</td>
-                <td>1,5 кг х <span>200 руб.</span></td>
-                <td>300 руб.</td>
-              </tr>
-              <tr>
-                <td><img src="img/product-3.jpg" width="20" height="20"
-                    alt="Сливочно-клубничное с  присыпкой из белого шоколада"></td>
-                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td><span>1,5 кг х 200 руб.</span></td>
-                <td>450 руб.</td>
-              </tr>
-              <tr>
-                <td colspan="4">Итого:750 руб.</td>
-              </tr>
-            </table>
-            <a href="#">Оформить заказ</a>
-            -->
+            <button type="button" class="button-full">2 товара</button>
+            <div class="basket">
+              <button type="button"><span class="visually-hidden">Удалить товар из корзины</span></button>
+              <button type="button"><span class="visually-hidden">Удалить товар из корзины</span></button>
+              <table class="table-width">
+                <tr>
+                  <td class="cell-1"><img src="img/product-1.jpg" width="20" height="20"
+                      alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></td>
+                  <td class="cell-2">Пломбир с апельсиновым джемом</td>
+                  <td class="cell-3">1,5 кг х <span class="pale">200 руб.</span></td>
+                  <td class="cell-4">300 руб.</td>
+                </tr>
+                <tr class="table-underline">
+                  <td class="cell-1"><img src="img/product-3.jpg" width="20" height="20"
+                      alt="Сливочно-клубничное с  присыпкой из белого шоколада"></td>
+                  <td class="cell-2">Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td class="cell-3">1,5 кг х <span class="pale">200 руб.</span></td>
+                  <td class="cell-4">450 руб.</td>
+                </tr>
+                <tr class="cell-5">
+                  <td colspan="4">Итого:750 руб.</td>
+                </tr>
+              </table>
+              <a href="#" class="red-button button-checkout">Оформить заказ</a>
+            </div>
           </li>
         </ul>
       </nav>
