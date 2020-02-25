@@ -184,16 +184,16 @@ body {
 
 .navigation {
   display: flex;
-  align-items: center;
   margin-left: 27px;
   margin-right: 27px;
+  align-items: center;
 }
 
 .site-navigation {
+  display: flex;
   position:relative;
   margin: 0;
   padding: 0;
-  display: flex;
   list-style: none;
 }
 
@@ -213,8 +213,8 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  width:100%;
   bottom: 0;
+  width: 100%;
   height: 1px;
   background-color: #d1d0ce;
 }
@@ -252,7 +252,7 @@ li:hover .catalog-list {
   left: 20px;
   margin: 0;
   padding: 0;
-  z-index:10;
+  z-index: 1;
   list-style: none;
   border-radius:5px;
   background-color: #f8f7f4;
@@ -281,38 +281,38 @@ li:hover .catalog-list {
 }
 
 .novelty a:before {
-  display:block;
-  content: "";
   position: absolute;
-  border-bottom: 5px solid #859e90;;
-  width: 100%;
+  display: block;
+  content: "";
   top:-5px;
   left: -15px;
+  width: 100%;
+  border-bottom: 5px solid #859e90;;
 }
 
 .user-navigation {
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: flex;
+  margin: 0;
   margin-left: auto;
+  padding: 0;
+  color: #ffffff;
+  list-style: none; 
 }
 
 .user-navigation li {
-  padding: 0 27px;
   position: relative;
+  padding: 0 27px;
 }
 
 .form-search {
-  line-height: 1.71;
-  text-align: left;
-  color: #999999;
   position: absolute;
-  display:none;
+  display: none;
   top: 30px;
   right: 25px;
-  border-radius:5px;
+  line-height: 1.71;
+  text-align: left;
+  color: #999999; 
+  border-radius: 5px;
   background-color:#f8f7f4;
 }
 
@@ -320,30 +320,32 @@ li:hover .catalog-list {
   margin:20px 15px;
   padding: 15px 15px;
   width: 311px;
-  border-radius:5px;
+  border-radius: 5px;
   border: solid 1px #d3d3d2;
   background-color: #ffffff;
 }
 
 .button:hover + .form-search {
-  display:block;
+  display: block;
 }
 
 .form-login {
+  position: absolute;
+  display: none;
+  top: 30px;
+  right: 30px;
+  padding: 20px 17px 22px 17px;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
   text-align: left;
   color: #999999;
-  position: absolute;
-  display:none;
-  top: 30px;
-  right: 30px;
-  border-radius:5px;
+  border-radius: 5px;
   background-color:#f8f7f4;
 }
 
 .email {
-  margin: 20px 17px 20px 19px;
-  padding:15px 15px;
+  padding: 15px 15px;
   width: 241px;
   border-radius: 5px;
   border: 1px solid #d3d3d2;
@@ -351,8 +353,8 @@ li:hover .catalog-list {
 }
 
 .password {
-  margin: 0px 17px 0px 19px;
-  padding:15px 15px;
+  margin-top: 20px;
+  padding: 15px 15px;
   width: 241px;
   border-radius: 5px;
   border: 1px solid #d3d3d2;
@@ -374,7 +376,7 @@ li:hover .catalog-list {
 
 .red-button {
   display: inline-block;
-  border:none;
+  border: none;
   text-align: center;
   font-size: 18px;
   font-weight: 700;
@@ -386,39 +388,37 @@ li:hover .catalog-list {
   background-image: linear-gradient(to top, #e74a35, #f26843);
 }
 
-.column {
-  height: 88px;
+.columns {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+
+.lost-password {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap-reverse;
-  
-}
-
-.lost-parol {
-  padding: 20px 38px 0px 0px;  
+  margin-top: 25px;
+  margin-right: 20px;
   font-size: 13px;
   line-height: 1.85;
   color: #323232;
-}
-
-.new-registration {
-  padding:0;
-  font-size: 13px;
-  line-height: 1.85;
-  color: #323232;
+  text-align: left;
 } 
 
 .button-enter {
+  margin-top: 20px;
+  margin-right: auto;
+  border-radius: 20px;
   padding: 15px 25px 14px 25px;
-  margin: 20px 20px 22px 19px;
-}
+ }
 
 .visually-hidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
   margin: -1px;
   padding: 0;
+  width: 1px;
+  height: 1px;
   border: 0;
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
@@ -426,14 +426,14 @@ li:hover .catalog-list {
 
 .response-form {
   padding: 20px 26px 27px 24px;
+  width: 478px;
   line-height: 1.5;
   color: #999999;
-  width: 478px;
   border-radius: 10px;
   background-color: #f8f7f4;
 }
 
-.response-form li {
+.response-list {
   margin: 0;
   padding 0;
   list-style: none;
@@ -447,10 +447,10 @@ li:hover .catalog-list {
 }
 
 .data {
-  margin-top: 4px;
+  margin-top: 24px;
   margin-left: -40px;
-  width: 267px;
   padding: 16px 15px;
+  width: 267px;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
   background-color: #ffffff;
@@ -460,8 +460,8 @@ li:hover .catalog-list {
 .data-email  {
   margin-top: 24px;
   margin-left: -40px;
-  width: 267px;
   padding: 16px 15px;
+  width: 267px;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
   background-color: #ffffff;
@@ -470,17 +470,18 @@ li:hover .catalog-list {
 .comment {
   margin-top: 20px;
   margin-left: -40px;
-  margin-bottom: 0px;
-  margin-right: 26px;
+  margin-right: auto;
+  padding: 15px 264px 15px 15px;
   height: 155px;
-  padding: 13px 264px 0px 15px;
   border-radius: 5px;
   border: solid 1px #d3d3d2;
   background-color: #ffffff;
 }
 
 .button-send {
-  margin-left: 290px;
+  display: block;
+  margin-left: auto;
+  text-align: right;
   padding: 14px 24px 13px 24px; 
   border-radius: 30px;
 } 
@@ -491,15 +492,15 @@ li:hover .catalog-list {
 }
 
 .basket {
-  font-size: 13px;
-  line-height: 1.23;
   position:absolute;
   display:none;
-  z-index:20;
   top:30px;
   right: 0px;
-  color: #323232;
   width: 540px;
+  font-size: 13px;
+  line-height: 1.23;
+  z-index:20;
+  color: #323232;
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
@@ -516,9 +517,8 @@ li:hover .catalog-list {
 
 .table-width {
   width: 510px;
+  padding: 20px 15px 21px 42px;
   border-collapse: collapse;
-  margin-top: 0px;
-  margin-left: 15px;
 }
 
 .cell-1 {
@@ -532,20 +532,20 @@ li:hover .catalog-list {
 }
 
 .cell-3 {
-  width:93px;
+  width: 93px;
   padding-right: 29px;
 }
 
 .cell-4 {
   width: 49px;
-  padding-right: px;
+  padding-right: 0px;
 }
 
 .cell-5 {
   font-size: 15px;
   font-weight: 700;
+  height: 46px;
   line-height: 1.2;
-  height:46px;
   color: #323232;
   text-align:right;
 }
@@ -555,18 +555,21 @@ li:hover .catalog-list {
 }
 
 .button-checkout {
+  display: block;
+  margin-left: auto;
+  margin-right: 15px;
+  max-width: 170px;
   padding: 13px 15px 13px 14px;
-  margin-left:355px;
-  margin-bottom:21px;
+  margin-bottom: 21px;
   border-radius: 30px;
-  text-decoration:none;
+  text-decoration: none;
 }
     
 .page-title {
   font-size: 24px;
   line-height: 1.25;
-    padding-left: 10px;
-    padding-top: 20px;
+  padding-left: 10px;
+  padding-top: 20px;
   color: #323232;
 }  
 
@@ -618,7 +621,6 @@ li:hover .catalog-list {
 
 .post {
   width: 549px;
-  height: 211px;
   margin-right: 27px;
   color: #5a5a5a;
   border-radius: 15px;
@@ -628,16 +630,15 @@ li:hover .catalog-list {
 }
 
 .post-text {
-  margin: 33px 22px 38px 21px;
-  width: 506px;
-
+  padding: 33px 22px 38px 21px;
+  
 }
 
-.emailexamplecom {
+.email-example {
   margin-left: 20px;
   line-height: 1.5;
   color: #999999;
-  padding: 15px 205px 13px 14px;
+  padding: 15px 205px 13px 15px;
   border-radius: 5px;
   background-color: #ffffff;
 }
@@ -645,7 +646,6 @@ li:hover .catalog-list {
 .emailexamplecom-button {
   padding: 14px 19px 13px 19px;
   margin-left: 10px;
-
   border-radius: 30px;
 }
 
@@ -732,12 +732,12 @@ font-size: 35px;
 }
 
 .subtitle {
-  display:flex;
+  display: flex;
   justify-content: center;
-  align-items:center;
+  flex-wrap: wrap;
+  align-items: center;
   margin: 0 auto;
-  flex-wrap:wrap;
-  max-width:700px;
+  max-width: 700px;
   font-size: 60px;
   font-weight: 700;
   line-height: 1.01;
@@ -745,9 +745,9 @@ font-size: 35px;
 }
 
 .slider-button {
-  display:flex;
+  display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   margin: 26px auto;
   font-size: 32px;
   font-weight: 700;
@@ -757,7 +757,6 @@ font-size: 35px;
 }
 
 .information {
-  position: relative;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -789,7 +788,7 @@ font-size: 35px;
   background-repeat: no-repeat; 
 }
 
-.caption-left {
+.caption {
   font-size: 35px;
   font-weight: 700;
   line-height: 1.17;
@@ -811,14 +810,7 @@ font-size: 35px;
   background-repeat: no-repeat; 
 }
 
-.caption-right {
-  font-size: 35px;
-  font-weight: 700;
-  line-height: 1.17;
-  text-align: left;
-}
-
-.color-text {
+.color-button {
   color: #fefefe;
 }
 
@@ -861,8 +853,8 @@ font-size: 35px;
 }
 
 .product-list {
-  display:flex;
-  flex-wrap:wrap;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
