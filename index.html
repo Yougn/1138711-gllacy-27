@@ -42,14 +42,14 @@
             <button type="button" class="button">Поиск</button>
             <form action="https://echo.htmlacademy.ru" method="get" class="form-search">
               <label for="search" class="visually-hidden">Поиск</label>
-              <input type="search" name="search" placeholder="Крем-брюле" class="site-search">
+              <input type="search" name="search" id="search" placeholder="Крем-брюле" class="site-search">
             </form>
           </li>
           <li>
             <button type="button" class="button">Вход</button>
             <form action="https://echo.htmlacademy.ru" method="post" class="form-login">
               <label for="email" class="visually-hidden">Электронная почта</label>
-              <input type="email" name="email" id="email" placeholder="email-example" class="email">
+              <input type="email" name="email" id="email" placeholder="email@example.com" class="email">
               <label for="password" class="visually-hidden">Пароль</label>
               <input type="password" name="password" id="password" placeholder="••••••••" class="password">
               <div class="columns">
@@ -108,7 +108,7 @@
       </div>
 
       <div class="container raspberries-chocolate">
-        <section class=" raspberries">
+        <section class="raspberries">
           <h3 class="caption">Малинка даром!</h3>
           <p class="offer">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <a href="#" class="red-button color-button">Хочу варенье!</a>
@@ -184,30 +184,60 @@
           </ul>
         </section>
       </div>
-
-      <div class="container-strawberry-post">
+      <div class="container">
+      <div class="strawberry-post">
         <article class="strawberry">
           <p class="note">Новое в нашем блоге</p>
           <h4><a href="https://ten-ways.com">10 способов сервировок фруктовых щербетов к столу</a></h4>
         </article>
+
         <section class="post">
           <h4 class="visually-hidden">Рассылка</h4>
           <form action="https://echo.htmlacademy.ru" method="post">
+            <div>
             <p class="post-text">
               Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
             </p>
-            <label for="mailing" class="visually-hidden">Рассылка</label>
-            <input type="email" class="emailexamplecom" name="mailing" id="mailing" placeholder="email@example.com">
-            <button type="submit" class="red-button emailexamplecom-button">Отправить</button>
+           </div>
+            <div class="columns-post">
+              <label for="mailing" class="visually-hidden">Рассылка</label>
+              <input type="email" class="email-example" name="mailing" id="mailing" placeholder="email@example.com">
+              <button type="submit" class="red-button emaile-button">Отправить</button>
+          </div>
           </form>
         </section>
       </div>
-
+      </div>
       <div class="container">
         <img src="img/map-background.png" width="1200" height="430"
           alt="Главный офис и офлайн-магазин на карте по адресу ул. Большая Конюшенная, д. 19/8, г. Санкт-Петербург">
       </div>
 
+      
+    </main>
+
+    <div class="container">
+      <footer class="main-footer">
+
+        <ul class="footer-social">
+          <li><a href="#">Твиттер</a></li>
+          <li><a href="#">Вконтакте</a></li>
+          <li><a href="#">Фейсбук</a></li>
+          <li><a href="#">Инстаграм</a></li>
+        </ul>
+
+        <ul class="information-list">
+          <li><a href="#">Для поставщиков</a></li>
+          <li><a href="#">Наши документы</a></li>
+          <li><a href="#">О производстве</a></li>
+          <li><a href="#">Экологические стандарты</a></li>
+        </ul>
+
+        <p class="html-academy">
+          Сделано в<a href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy </a>© 2019
+        </p>
+
+      </footer>
       <div class="container">
         <p class="address">
           Адрес главного офиса
@@ -238,30 +268,6 @@
           <button type="submit" class="red-button button-send">Отправить</button>
         </form>
       </div>
-    </main>
-
-    <div class="container">
-      <footer class="main-footer">
-
-        <ul class="footer-social">
-          <li><a href="#">Твиттер</a></li>
-          <li><a href="#">Вконтакте</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Инстаграм</a></li>
-        </ul>
-
-        <ul class="information-list">
-          <li><a href="#">Для поставщиков</a></li>
-          <li><a href="#">Наши документы</a></li>
-          <li><a href="#">О производстве</a></li>
-          <li><a href="#">Экологические стандарты</a></li>
-        </ul>
-
-        <p class="html-academy">
-          Сделано в<a href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy </a>© 2019
-        </p>
-
-      </footer>
     </div>
 
   </div>

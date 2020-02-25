@@ -277,7 +277,7 @@ li:hover .catalog-list {
 
 .novelty a {
   font-weight: bold;
-  border-bottom:1px solid #d1d0ce;
+  border-bottom: 1px solid #d1d0ce;
 }
 
 .novelty a:before {
@@ -288,6 +288,17 @@ li:hover .catalog-list {
   left: -15px;
   width: 100%;
   border-bottom: 5px solid #859e90;;
+}
+
+.novelty a::after {
+  position: absolute;
+  display: block;
+  content: "";
+  bottom: 0px;
+  left: -5px;
+  height: 1px;
+  width: 128px;
+  background-color: #d1d0ce;
 }
 
 .user-navigation {
@@ -317,7 +328,7 @@ li:hover .catalog-list {
 }
 
 .site-search {
-  margin:20px 15px;
+  margin:20px;
   padding: 15px 15px;
   width: 311px;
   border-radius: 5px;
@@ -471,7 +482,8 @@ li:hover .catalog-list {
   margin-top: 20px;
   margin-left: -40px;
   margin-right: auto;
-  padding: 15px 264px 15px 15px;
+  padding: 15px 15px;
+  width: 428px;
   height: 155px;
   border-radius: 5px;
   border: solid 1px #d3d3d2;
@@ -492,9 +504,9 @@ li:hover .catalog-list {
 }
 
 .basket {
-  position:absolute;
-  display:none;
-  top:30px;
+  position: absolute;
+  display: none;
+  top: 30px;
   right: 0px;
   width: 540px;
   font-size: 13px;
@@ -544,7 +556,6 @@ li:hover .catalog-list {
 .cell-5 {
   font-size: 15px;
   font-weight: 700;
-  height: 46px;
   line-height: 1.2;
   color: #323232;
   text-align:right;
@@ -592,36 +603,33 @@ li:hover .catalog-list {
   padding: 10px 0px;
 }
 
-.container-strawberry-post {
-  width: 1200px;
-  margin: 0 auto;
+.strawberry-post {
   display: flex;
   justify-content: space-between;
 }
 
  .strawberry {
-  width: 561px;
-  margin-left: 27px;
+  padding: 26px 262px 83px 19px;
   border-radius: 15px;
   background-image: url("../img/strawberry-background.jpg");
   background-repeat: no-repeat;
 }
 
+.note {
+  margin-bottom: 13px;
+  color: #323232;
+}
  .strawberry a {
+  max-height: 84px;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
+  color: #323232;
   text-decoration: underline;
-  color: #323232;
-}
-
-.note {
-  color: #323232;
 }
 
 .post {
-  width: 549px;
-  margin-right: 27px;
+  padding: 35px 22px 35px 22px;
   color: #5a5a5a;
   border-radius: 15px;
   background-color: #f8f7f4;
@@ -630,22 +638,25 @@ li:hover .catalog-list {
 }
 
 .post-text {
-  padding: 33px 22px 38px 21px;
-  
+ margin-bottom: 38px;
+}
+
+.columns-post {
+ display: flex;
+ justify-content: space-between;
 }
 
 .email-example {
-  margin-left: 20px;
+  padding: 15px 205px 13px 15px;
   line-height: 1.5;
   color: #999999;
-  padding: 15px 205px 13px 15px;
   border-radius: 5px;
   background-color: #ffffff;
 }
 
-.emailexamplecom-button {
+.emaile-button {
   padding: 14px 19px 13px 19px;
-  margin-left: 10px;
+  width: 129px;
   border-radius: 30px;
 }
 
@@ -776,10 +787,11 @@ font-size: 35px;
 
 .raspberries-chocolate {
   display: flex;
-  justify-content: space-between;
+  padding: 27px;
 }
 
 .raspberries {
+  padding: 23px 20px 23px 20px;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.22;
@@ -789,19 +801,22 @@ font-size: 35px;
 }
 
 .caption {
+  margin: 0px;
   font-size: 35px;
   font-weight: 700;
   line-height: 1.17;
-  text-align: left;
 }
 
 .offer {
+  margin-top: 20px;
+  width: 100%;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.22;
 }
 
 .chocolate {
+  padding: 23px 20px 23px 20px;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.22;
@@ -811,7 +826,13 @@ font-size: 35px;
 }
 
 .color-button {
+  display: block;
+  margin-left: auto;
+  padding: 15px 23px;
+  width: 165px;
   color: #fefefe;
+  text-decoration: none;
+  border-radius: 30px;
 }
 
 .filter {
