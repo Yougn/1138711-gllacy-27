@@ -9,21 +9,17 @@
 </head>
 
 <body>
-
   <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
   <input class="visually-hidden" type="radio" id="product-2" name="toggle">
   <input class="visually-hidden" type="radio" id="product-3" name="toggle">
 
   <div class="site-wrapper">
-
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
-
           <a class="main-header-logo" href="index.html">
             <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейсишопа">
           </a>
-
           <ul class="site-navigation list">
             <li class="site-nav catalog-open">
               <a href="catalog-item.html">Каталог</a>
@@ -38,22 +34,21 @@
             <li class="site-nav"><a href="delivery.html">Доставка и оплата</a></li>
             <li class="site-nav"><a href="aboutus.html">О компании</a></li>
           </ul>
-
           <ul class="user-navigation list">
             <li>
               <button type="button" class="button">Поиск</button>
               <form action="https://echo.htmlacademy.ru" method="get" class="form-search">
                 <label for="search" class="visually-hidden">Поиск</label>
-                <input type="search" name="search" id="search" placeholder="Крем-брюле" class="site-search">
+                <input type="search" name="search" id="search" placeholder="Крем-брюле" class="site-search text-login">
               </form>
             </li>
             <li>
               <button type="button" class="button">Вход</button>
               <form action="https://echo.htmlacademy.ru" method="post" class="form-login">
                 <label for="email" class="visually-hidden">Электронная почта</label>
-                <input type="email" name="email" id="email" placeholder="email@example.com" class="email">
+                <input type="email" name="email" id="email" placeholder="email@example.com" class="email text-login">
                 <label for="password" class="visually-hidden">Пароль</label>
-                <input type="password" name="password" id="password" placeholder="••••••••" class="password">
+                <input type="password text-login" name="password" id="password" placeholder="••••••••" class="password">
                 <div class="columns">
                   <button type="submit" class="red-button button-enter">Войти</button>
                   <div class="lost-password">
@@ -68,42 +63,40 @@
             </li>
           </ul>
         </nav>
-
         <div class="work-information">
           <p class="time">
             С 10 до 20, ежедневно</p>
           <a href="tel:88124502525" class="tel">8 812 450-25-25</a>
         </div>
-
       </div>
     </header>
 
     <main>
-      <div class="container ">
+      <div class="container-slider">
         <section class="slider">
           <div class="slider-controls">
             <label for="product-1">Первый</label>
             <label for="product-2">Второй</label>
             <label for="product-3">Третий</label>
           </div>
-          <ul class="slider-list">
+          <ul class="list">
             <li class="slider-item slide" id="slide1">
               <h2 class="slide-title">
                 Крем-брюле и пломбир с малиновым джемом
               </h2>
-              <a class="button slide-button" href="#">Давайте оба!</a>
+              <a class="slide-button" href="#">Давайте оба!</a>
             </li>
             <li class="slider-item slide" id="slide2">
               <h2 class="slide-title">
                 Шоколадный пломбир и лимонный сорбет
               </h2>
-              <a class="button slide-button" href="#">Давайте оба!</a>
+              <a class="slide-button" href="#">Давайте оба!</a>
             </li>
             <li class="slider-item slide" id="slide3">
               <h2 class="slide-title">
                 Пломбир с помадкой и клубничный щербет
               </h2>
-              <a class="button slide-button" href="#">Давайте оба!</a>
+              <a class="slide-button" href="#">Давайте оба!</a>
             </li>
           </ul>
         </section>
@@ -127,13 +120,9 @@
         </div>
       </div>
 
-
-
       <div class="container-catalog">
         <section>
-
           <ul class="product-list">
-
             <li>
               <article class="product">
                 <img class="product-hit" src="img/hit.svg" alt="Хит" width="61" height="61">
@@ -144,34 +133,33 @@
                 <button class="red-button product-button" type="button">Быстрый просмотр</button>
               </article>
             </li>
-
             <li>
               <article class="product">
+                <img class="product-hit" src="img/hit.svg" alt="Хит" width="61" height="61">
                 <img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-                <p class="big">
-                  380 ₽<span class="small">/кг</span>
-                </p>
-                <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
+                <p class="product-cost"> 380 ₽<span>/кг</span></p>
+                <h3><a class="product-offer" href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
+                <button class="red-button product-button" type="button">Быстрый просмотр</button>
               </article>
             </li>
             <li>
               <article class="product">
+                <img class="product-hit" src="img/hit.svg" alt="Хит" width="61" height="61">
                 <img src="img/product-3.jpg" width="267" height="267"
                   alt="Сливочно-клубничное с  присыпкой из белого шоколада">
-                <p class="big">
-                  355 ₽<span class="small">/кг</span>
-                </p>
-                <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+                <p class="product-cost"> 355 ₽<span class="small">/кг</span></p>
+                <h3><a class="product-offer" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+                <button class="red-button product-button" type="button">Быстрый просмотр</button>
               </article>
             </li>
             <li>
               <article class="product">
+                <img class="product-hit" src="img/hit.svg" alt="Хит" width="61" height="61">
                 <img src="img/product-4.jpg" width="267" height="267"
                   alt="Сливочное крем-брюле с карамельной подливкой">
-                <p class="big">
-                  415 ₽<span class="small">/кг</span>
-                </p>
-                <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
+                <p class="product-cost"> 415 ₽<span class="small">/кг</span></p>
+                <h3><a class="product-offer" href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
+                <button class="red-button product-button" type="button">Быстрый просмотр</button>
               </article>
             </li>
           </ul>
@@ -209,7 +197,7 @@
           </article>
           <section class="post">
             <h4 class="visually-hidden">Рассылка</h4>
-            <form action="https://echo.htmlacademy.ru" method="post">
+            <form class="post-bg" action="https://echo.htmlacademy.ru" method="post">
               <div>
                 <p class="post-text">
                   Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас
@@ -218,7 +206,8 @@
               </div>
               <div class="columns-post">
                 <label for="mailing" class="visually-hidden">Рассылка</label>
-                <input type="email" class="email-example" name="mailing" id="mailing" placeholder="email@example.com">
+                <input class="email-example text-login" type="email" name="mailing" id="mailing"
+                  placeholder="email@example.com">
                 <button type="submit" class="red-button emaile-button">Отправить</button>
               </div>
             </form>
@@ -278,27 +267,26 @@
     </div>
 
     <div class="container">
-      <form action="https://echo.htmlacademy.ru" method="post" class="response-form">
+      <form class="response-form" action="https://echo.htmlacademy.ru" method="post">
         <p>Мы обязательно вам ответим!</p>
         <ul class="response-list">
           <li>
             <label for="name" class="visually-hidden">Имя Фамилия</label>
-            <input type="text" name="name" id="name" placeholder="Имя Фамилия" class="data">
+            <input class="data text-login" type="text" name="name" id="name" placeholder="Имя Фамилия">
           </li>
           <li>
             <label for="feedback-email" class="visually-hidden">Почта</label>
-            <input type="email" name="mail" id="feedback-email" placeholder="email@example.com" class="data">
+            <input class="data text-login" type="email" name="mail" id="feedback-email" placeholder="email@example.com">
           </li>
           <li>
             <label for="comment-field" class="visually-hidden">Комментарий</label>
-            <textarea name="comment" id="comment-field" rows="5" placeholder="В свободной форме"
-              class="comment"></textarea>
+            <textarea class="comment text-login" name="comment" id="comment-field" rows="5"
+              placeholder="В свободной форме"></textarea>
           </li>
         </ul>
         <button type="submit" class="red-button button-send">Отправить</button>
       </form>
     </div>
-
   </div>
 </body>
 
