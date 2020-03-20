@@ -76,16 +76,20 @@
               </button>
             </li>
           </ul>
-        </nav>
 
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+      <div class="container">
         <div class="work-information">
           <p class="time-inform">С 10 до 20, ежедневно</p>
           <a class="tel-inform" href="tel:88124502525">8 812 450-25-25</a>
         </div>
       </div>
-    </header>
 
-    <main>
       <div class="container">
         <section class="slider list">
           <div class="slider-controls">
@@ -141,7 +145,7 @@
                 <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 <p class="product-cost">310 ₽<span>/кг</span></p>
                 <h3 class="product-title"><a class="product-offer link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-                <button class="red-button btn-product" type="button">Быстрый просмотр</button>
+                <a href="#" class="red-button btn-product">Быстрый просмотр</a>
               </article>
             </li>
             <li class="product-item">
@@ -150,7 +154,7 @@
                 <img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                 <p class="product-cost">380 ₽<span>/кг</span></p>
                 <h3 class="product-title"><a class="product-offer link" href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
-                <button class="red-button btn-product" type="button">Быстрый просмотр</button>
+                <a href="#" class="red-button btn-product">Быстрый просмотр</a>
               </article>
             </li>
             <li class="product-item">
@@ -159,7 +163,7 @@
                 <img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с  присыпкой из белого шоколада">
                 <p class="product-cost">355 ₽<span>/кг</span></p>
                 <h3 class="product-title"><a class="product-offer link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
-                <button class="red-button btn-product" type="button">Быстрый просмотр</button>
+                <a href="#" class="red-button btn-product">Быстрый просмотр</a>
               </article>
             </li>
             <li class="product-item">
@@ -168,7 +172,7 @@
                 <img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                 <p class="product-cost">415 ₽<span>/кг</span></p>
                 <h3 class="product-title"><a class="product-offer link" href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
-                <button class="red-button btn-product" type="button">Быстрый просмотр</button>
+                <a href="#" class="red-button btn-product">Быстрый просмотр</a>
               </article>
             </li>
           </ul>
@@ -182,7 +186,7 @@
             <li class="advantage-production">
               Все наше мороженое изготавливается на собственном производстве, с использованием современног оборудования и проверенных временем технологий.
             </li>
-            <li class="advantage-partnes">
+            <li class="advantage-partners">
               Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нассвязывает долговременное сотрудничеств.
             </li>
             <li class="advantage-eco">
@@ -204,12 +208,10 @@
           <section class="subscribe">
             <h5 class="visually-hidden">Рассылка</h5>
             <form class="subscribe-bg" action="https://echo.htmlacademy.ru" method="post">
-              <div>
-                <p class="post-text">
-                  Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас
-                  происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-                </p>
-              </div>
+              <p class="post-text">
+                Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас
+                происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+              </p>
               <div class="columns-post">
                 <label for="mailing" class="visually-hidden">Рассылка</label>
                 <input class="email-example text-login" type="email" name="mailing" id="mailing" placeholder="email@example.com">
@@ -235,9 +237,7 @@
             <span class="street-office"> ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
             <p class="address-phone">
               Для заказов по телефону:
-              <span class="contact-phone">
-                <a href="tel:88124502525">8 812 450-25-25</a>
-              </span>
+              <a class="contact-phone" href="tel:88124502525">8 812 450-25-25</a>
               (с 10 до 20 ежедневно)
             </p>
             <a href="#" class="red-button btn-feedback">Форма обратной связи</a>
@@ -256,11 +256,11 @@
           <li><a href="#" class="social social-inst"> <span class="visually-hidden">Инстаграм</span></a></li>
         </ul>
 
-        <ul class="information-list">
-          <li><a class="icon-heart link" href="#">Для поставщиков</a></li>
-          <li><a class="link" href="#">Наши документы</a></li>
-          <li><a class="link" href="#">О производстве</a></li>
-          <li><a class="link" href="#">Экологические стандарты</a></li>
+        <ul class="information-list list">
+          <li class="information-for-suppliers"><a class="link" href="#">Для поставщиков</a></li>
+          <li class="information-about-us"><a class="link" href="#">Наши документы</a></li>
+          <li class="information-about-us"><a class="link" href="#">О производстве</a></li>
+          <li class="information-about-us"><a class="link" href="#">Экологические стандарты</a></li>
         </ul>
 
         <p class="html-academy">
