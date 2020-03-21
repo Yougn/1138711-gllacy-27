@@ -373,14 +373,12 @@ html {
 
 .site-nav a:hover,
 .site-nav a:focus {
-  padding: 8px 13px;
   color: #333333;
   text-decoration: none;
   background-color: #f7f6f3;
 }
 
 .site-nav a:active  {
-  padding: 8px 13px;
   color: #323232;
   background-color: #ededed;
   box-shadow: inset 0px 2px 1px 0 #696969;
@@ -454,6 +452,11 @@ html {
 
 .catalog a:active {
   background-color: #f6b5a5;
+}
+
+.catalog-current a {
+  color: #ffffff;
+  background-color: #d07058;
 }
 
 .novelty > a {
@@ -699,13 +702,20 @@ html {
   border: solid 2px rgba(46, 136, 228, 0.52);
 }
 
-.work-information {
+.information-breadcrumbs-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-information-box {
   display: flex;
   justify-content: flex-end;
+}
+
+.work-information {
+  display: flex;
   flex-direction: column;
-  margin-top: -27px;
-  position: relative;
-  z-index: 1;
+  margin-top: -30px;
 }
 
 .time-inform {
@@ -887,6 +897,7 @@ html {
   margin-left: 27px;
   margin-bottom: 35px;
   margin-top: 10px;
+  font-weight: 400;
   color: #323232;
   width: 1146px;
   border-radius: 15px;
@@ -897,6 +908,7 @@ html {
   margin: 0;
   margin-bottom: 10px;
   font-size: 24px;
+  font-weight: 500;
   line-height: 1.25;
   color: #323232;
 } 
@@ -1085,16 +1097,24 @@ html {
 
 .map {
   position: relative;
+  z-index: 1;
   width: 100%;
   height: 430px;
   overflow: hidden;
+}
+
+.map iframe {
+  position: relative;
+  border: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 .icon-ice-cream {
   position: absolute;
   bottom: 151px;
   left: 266px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .contacts-info {
@@ -1279,6 +1299,10 @@ html {
 
 .logo-html {
  display: block;
+}
+
+.feedback-form {
+  display: none;
 }
 
 .response-form {
@@ -1806,6 +1830,12 @@ html {
   border: 4px solid rgba(255, 255, 255, .4);
 }
 
+.filter-qualification-filler {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 703px;
+}
+
 .filter-filler  label  {
   display: inline-block;
   position: relative;
@@ -1914,17 +1944,25 @@ html {
   background-color: rgba(255, 255, 255, 0.2); 
 }
 
+.pagination-item:nth-child(2) {
+  margin-right: 6px;
+}
+
+.pagination-item:nth-child(4) {
+  margin-left: 5px;
+}
+
+.pagination-item:nth-child(5) {
+  margin-right: 3px;
+}
+
 .pagination-item a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 27px;
-  height: 27px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
-  font-size: 16px;
-  line-height: 1.13;
-  font-weight: 500;
-  text-align: right;
   color: #ffffff;
   background-color: transparent;
   text-decoration: none;
@@ -1953,7 +1991,7 @@ html {
   background-color: #ffffff;
 }
 
- .arrow-prev  {
+.arrow-prev  {
   position: relative;
   width: 27px;
   height: 26px;
