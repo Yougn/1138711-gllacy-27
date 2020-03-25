@@ -4,10 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
-</head>
+  <link href="css/normalize-min.css" rel="stylesheet">
+  <link href="css/style-min.css" rel="stylesheet">
+ </head>
 
 <body>
   <input class="visually-hidden product-1" type="radio" id="product-1" name="toggle" checked>
@@ -222,31 +221,30 @@
           </section>
         </div>
       </div>
-
       
-        <section class="map">
-          <h6 class="visually-hidden">Карта</h6>
-          <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002806!2d30.320858715677204!3d59.93871916905467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1584783902827!5m2!1sru!2sru" width="1880" height="430" allowfullscreen></iframe>
-            <img src="img/map-background.png" width="1220" height="430" alt="Главный офис и офлайн-магазин на карте по адресу ул. Большая Конюшенная, д. 19/8, г. Санкт-Петербург">
-            <img class="icon-ice-cream" src="img/pin.svg" width="80" height="140" alt="Вкусная мороженка">
-          </div>>
-          <div class="container-map">
-            <section class="contacts-info">
-              <p class="address-office">
-                Адрес главного офиса
-                и офлайн-магазина:
-              </p>
-              <span class="street-office"> ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
-              <p class="address-phone">
-                Для заказов по телефону:
-                <a class="contact-phone" href="tel:88124502525">8 812 450-25-25</a>
-                (с 10 до 20 ежедневно)
-              </p>
-              <a href="#" class="red-button btn-feedback">Форма обратной связи</a>
-            </section>
-          </div>
-        </section>
+      <section class="contacts">
+        <div class="map">
+        <h6 class="visually-hidden">Карта</h6>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002806!2d30.320858715677204!3d59.93871916905467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1584783902827!5m2!1sru!2sru" width="1880" height="430" allowfullscreen></iframe> 
+        <img src="img/map-background.png" width="1880" height="430" alt="Главный офис и офлайн-магазин на карте по адресу ул. Большая Конюшенная, д. 19/8, г. Санкт-Петербург">
+        <img class="icon-ice-cream" src="img/pin.svg" width="80" height="140" alt="Вкусная мороженка"> 
+        </div>
+        <div class="container-map">
+          <section class="contacts-info">
+            <p class="address-office">
+              Адрес главного офиса
+              и офлайн-магазина:
+            </p>
+            <span class="street-office"> ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+            <p class="address-phone">
+              Для заказов по телефону:
+              <a class="contact-phone" href="tel:88124502525">8 812 450-25-25</a>
+              (с 10 до 20 ежедневно)
+            </p>
+            <a href="#" class="red-button btn-feedback">Форма обратной связи</a>
+          </section>
+        </div>
+      </section>  
       
     </main>
 
@@ -275,31 +273,31 @@
       </footer>
     </div>
 
-     <div class="container">
-      <section class="feedback-form">
-       <form class="response-form" action="https://echo.htmlacademy.ru" method="post">
-         <p class="response-title">Мы обязательно вам ответим!</p>
-         <ul class="list">
-           <li>
-             <label for="name" class="visually-hidden">Имя Фамилия</label>
-             <input class="response-data text-response" type="text" name="name" id="name" placeholder="Имя Фамилия">
-           </li>
-           <li>
+    <section class="feedback-form">
+      <form class="response-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="response-title">Мы обязательно вам ответим!</p>
+        <ul class="list">
+          <li>
+             <label for="feedback-name" class="visually-hidden">Имя Фамилия</label>
+             <input class="response-data text-response" type="text" name="feedback-name" id="feedback-name" placeholder="Имя Фамилия">
+          </li>
+          <li>
              <label for="feedback-email" class="visually-hidden">Почта</label>
-             <input class="response-data text-response" type="email" name="mail" id="feedback-email" placeholder="email@example.com">
-           </li>
-           <li>
-             <label for="comment-field" class="visually-hidden">Комментарий</label>
-             <textarea class="response-comment text-response-textarea" name="comment" id="comment-field" rows="5" placeholder="В свободной форме"></textarea>
-           </li>
-         </ul>
-         <button type="submit" class="red-button btn-send">Отправить</button>
-         <button type="button" class="icon-big-cross"><span class="visually-hidden"> Закрыть окно</span></button>
-       </form>
-      </section>
-    </div>
+             <input class="response-data text-response" type="email" name="feedback-email" id="feedback-email" placeholder="email@example.com">
+          </li>
+          <li>
+             <label for="fieldback-comment" class="visually-hidden">Комментарий</label>
+             <textarea class="response-comment text-response-textarea" name="fieldback-comment" id="fieldback-comment" rows="5" placeholder="В свободной форме"></textarea>
+          </li>
+        </ul>
+        <button type="submit" class="red-button btn-send">Отправить</button>
+        <button type="button" class="btn-close"><span class="visually-hidden"> Закрыть окно</span></button>
+      </form>
+    </section> 
 
-   </div>
+  </div> 
+  
+  <script src="js/script-min.js"></script>
 
 </body>
 

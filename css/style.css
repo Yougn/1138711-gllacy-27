@@ -94,6 +94,7 @@ html {
 }
 
 .container-map {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
 }
@@ -381,9 +382,10 @@ html {
   background-color: #f7f6f3;
 }
 
-.site-nav a:active  {
+.site-nav > a:active  {
   color: #323232;
   background-color: #ededed;
+  box-shadow: inset 0px 2px 1px 0 #696969;
 }
 
 .site-nav-current  {
@@ -428,7 +430,7 @@ html {
 
 .catalog-list-current {
   position: absolute;
-  top: 38px;
+  top: 43px;
   left: 5px;
 }
 
@@ -764,7 +766,7 @@ html {
   font-weight: 700;
   line-height: 1.22;
   border-radius: 15px;
-  background: #9e0f3d url("../img/raspberries-background.jpg") no-repeat;
+  background: #9e0f3d url("../img/raspberries-background.jpg") repeat;
 }
 
 .chocolate-banner {
@@ -1107,9 +1109,11 @@ html {
   border-radius: 30px;
   vertical-align: middle;
 }
+.contacts {
+  position: relative;
+}
 
 .map {
-  position: relative;
   z-index: 1;
   width: 100%;
   height: 430px;
@@ -1118,8 +1122,8 @@ html {
 
 .icon-ice-cream {
   position: absolute;
-  bottom: 151px;
-  left: 266px;
+  bottom: 153px;
+  left: 341px;
   z-index: 1;
 }
 
@@ -1134,7 +1138,7 @@ iframe {
   position: absolute;
   z-index: 3;
   bottom: 62px;
-  right: 101px;
+  right: 27px;
   width: 302px;
   padding: 31px 25px;
   font-size: 14px;
@@ -1321,8 +1325,64 @@ iframe {
  margin-top: -1px;
 }
 
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .feedback-form {
   display: none;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin-left: -239px;
+  z-index: 5;
+}
+
+.feedback-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.feedback-error {
+  animation: shake 0.6s;
 }
 
 .response-form {
@@ -1341,7 +1401,7 @@ iframe {
   color: #323232;
 }
 
-.icon-big-cross {
+.btn-close {
   position: absolute;
   top: 19px;
   right: 14px;
@@ -1792,12 +1852,24 @@ iframe {
   cursor: pointer;
 }
 
+.range-controls .toggle:hover {
+  width: 22px;
+  height: 25px;
+  background: url("../img/big-filter-button.svg") no-repeat;
+}
+
 .range-controls .toggle-min {
   left: 35px;
 }
 
 .range-controls .toggle-max {
   left: 133px;
+}
+
+.range-controls .toggle-min:hover {
+  width: 22px;
+  height: 25px;
+
 }
 
 .filter-fat label {
@@ -1857,6 +1929,7 @@ iframe {
   margin-right: 15px;
   margin-bottom: 17px;
 }
+
 .filter-qualification-filler legend {
   margin-bottom: 6px;
   margin-left: 17px;
@@ -1868,7 +1941,7 @@ iframe {
 .filter-qualification-filler ul {
   display: flex;
   flex-wrap: wrap;
-  padding: 8px 2px 8px 0;
+  padding: 5px 0px 5px 16px;
   font-size: 16px;
   line-height: 1.13;
   color: #ffffff;
@@ -1879,27 +1952,32 @@ iframe {
 .filter-filler  label  {
   display: inline-block;
   position: relative;
-  padding-left: 13px;
+  padding-left: 16px;
   margin-right: 20px;
   vertical-align: middle;
   cursor: pointer;
 }
 
+.filter-filler li {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
 .filter-filler li:first-child {
-  padding-right: 19px;
-   padding-left: 34px;
+  padding-right: 18px;
+  padding-left: 16px;
 }
 
 .filter-filler li:nth-child(2) {
-  padding-right: 18px;
+  padding-right: 15px;
 }
 
 .filter-filler li:nth-child(3) {
-  padding-right: 22px;
+  padding-right: 20px;
 }
 
 .filter-filler li:nth-child(4) {
-  padding-right: 22px;
+  padding-right: 17px;
 }
 
 .filter-filler label::before {
